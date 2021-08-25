@@ -103,6 +103,10 @@ y= (screen_height / 2) - (app_height / 2)
 root.geometry (f'{app_width}x{app_height}+{int(x)}+{int(y)}')
 root.resizable (0,0)
 
+firstLabel = Label(text="Enter a country", font=("Arial",15))
+firstLabel.pack(fill=BOTH, ipady="10",padx="20")
+
+
 countryEntry = Entry(font=("Arial",15) )
 countryEntry.focus()
 countryEntry.pack(fill=BOTH, ipady="10",padx="20")
